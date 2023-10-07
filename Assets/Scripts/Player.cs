@@ -24,11 +24,11 @@ public class Player : MonoBehaviour
 
         if (movement.x < 0)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-0.25f, 0.25f, 0.25f);
         }
         else if (movement.x > 0)
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         }
     }
     void FixedUpdate()
