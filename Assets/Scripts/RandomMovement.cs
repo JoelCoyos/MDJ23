@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RandomMovement : MonoBehaviour
 {
-    public float speed = 2.0f; // Enemy movement speed
-    public float minWaitTime = 1.0f; // Minimum wait time before changing direction
-    public float maxWaitTime = 4.0f; // Maximum wait time before changing direction
+    public float speed; // Enemy movement speed
+    public float minWaitTime; // Minimum wait time before changing direction
+    public float maxWaitTime; // Maximum wait time before changing direction
 
     private Vector2 target;
     private float waitTime;

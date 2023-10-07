@@ -319,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 1716100965861443849}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8783634, y: 1.6715832, z: 0.14217399}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 6437427087453054280}
   - component: {fileID: 4526619869716871446}
   - component: {fileID: 3108957897792362550}
+  - component: {fileID: 5112799873948114421}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -577,6 +578,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5112799873948114421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854274884306043042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09a364bfd493a64ca24b9cceabb5fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 7763347318198553240}
+  projectile: {fileID: 636562442485763868, guid: c7e69caf7772758449000d20a1acb185, type: 3}
+  projectileSpeed: 3
 --- !u!1 &2446706726068023431
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +618,7 @@ Transform:
   m_GameObject: {fileID: 2446706726068023431}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0283633, y: 1.2415832, z: 0.14217399}
+  m_LocalPosition: {x: 0, y: 0, z: 0.14217399}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

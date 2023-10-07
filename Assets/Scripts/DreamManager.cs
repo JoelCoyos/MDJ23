@@ -15,6 +15,11 @@ public class DreamManager : MonoBehaviour
 
     private int dreamHealth;
 
+    [SerializeField] private Material dreamMaterial;
+
+    [SerializeField] private float VisionRadius;
+    Animator dreamAnimator;
+
     public enum DreamType
     {
         eye,
@@ -29,11 +34,17 @@ public class DreamManager : MonoBehaviour
         DamageDreamHealthEvent = new UnityEvent<int>();
     }
 
+    private void Update()
+    {
+        dreamMaterial.SetFloat("_DreamPlayerVisionRadius", VisionRadius);
+    }
+
     private void Start()
     {
         GameManager.StartDreamEvent.AddListener(StartDream);
         DamageDreamHealthEvent.AddListener(damageDreamHealth);
         dreamHealth = 3;
+        dreamAnimator = GetComponent<Animator>();
         StartDream(DreamType.eye);
     }
 
@@ -45,7 +56,8 @@ public class DreamManager : MonoBehaviour
     public void damageDreamHealth(int points)
     {
         dreamHealth = dreamHealth - points > 0 ? dreamHealth - points : 0;
-        if(dreamHealth == 0)
+        dreamAnimator.SetTrigger("TakeDamage");
+        if (dreamHealth == 0)
             Destroy(currentDream);
     }
 
