@@ -6,12 +6,14 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     private Vector2 movement;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();    
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,11 +26,11 @@ public class Player : MonoBehaviour
 
         if (movement.x < 0)
         {
-            transform.localScale = new Vector3(-0.25f, 0.25f, 0.25f);
+            spriteRenderer.flipX = true;
         }
         else if (movement.x > 0)
         {
-            transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+            spriteRenderer.flipX = false;
         }
     }
     void FixedUpdate()
