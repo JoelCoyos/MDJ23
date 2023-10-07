@@ -8,6 +8,7 @@ public  abstract class RealityEvent : MonoBehaviour
 
     public UnityEvent<bool> RealityEventResult;
     public SpriteRenderer backgroundSprite;
+    [SerializeField] Camera dreamCamera;
 
     public abstract void Spawn();
 
