@@ -22,10 +22,13 @@ public class Player : MonoBehaviour
 
         movement = new Vector2(horizontalInput, verticalInput).normalized;
 
-        if (movement != Vector2.zero)
+        if (movement.x < 0)
         {
-            //float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
-            //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (movement.x > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
     void FixedUpdate()
