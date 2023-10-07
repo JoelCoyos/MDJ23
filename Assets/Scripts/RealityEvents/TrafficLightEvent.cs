@@ -29,10 +29,9 @@ public class TrafficLightEvent : RealityEvent
             }
             else
             {
-                print("seguro");
+                GameManager.Instance.currentHealth++;
             }
         }
-
     }
 
     private IEnumerator WaitForGreenLight()
