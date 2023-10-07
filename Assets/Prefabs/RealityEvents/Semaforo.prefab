@@ -86,7 +86,7 @@ MonoBehaviour:
       m_Calls: []
   backgroundSprite: {fileID: 4908576182830347193}
   dreamCamera: {fileID: 0}
-  calleCollider: {fileID: 0}
+  calleCollider: {fileID: 7508583537895907289}
   redLight: {fileID: 8452790443371112935}
   greenLight: {fileID: 8403929509420145188}
 --- !u!61 &7508583537895907289
