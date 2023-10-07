@@ -4,37 +4,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    private Vector2 movement;
+    [SerializeField] Rigidbody2D body;
 
-    // Start is called before the first frame update
+    float horizontal;
+    float vertical;
+
+    public float runSpeed = 20.0f;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();    
-        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        movement = new Vector2(horizontalInput, verticalInput).normalized;
-
-        if (movement.x < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (movement.x > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
     }
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
-        rb.velocity = movement * moveSpeed;
+        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 }
