@@ -21,12 +21,19 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             currentSpeed = 0.0f;
+            playerRealityAnimator.SetBool("isIdle", true);
         }
         else if(Input.GetKeyUp(KeyCode.Space))
         {
             currentSpeed = _speed;
+            playerRealityAnimator.SetBool("isIdle", false);
+        }
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            GameManager.Instance.currentHealth++;
+            print(GameManager.Instance.currentHealth);
         }
         transform.position += currentSpeed * Time.deltaTime * new Vector3(1, 0,0);
-        playerRealityAnimator.SetInteger("currentHealth", GameManager.Instance.currentHealth);
+        playerRealityAnimator.SetFloat("Health", GameManager.Instance.currentHealth);
     }
 }

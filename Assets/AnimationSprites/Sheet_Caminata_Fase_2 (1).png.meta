@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f9d283555f6ce24581934fc7855ec59
+guid: d3820c448b782d643a6678975b1b4783
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +37,9 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 2
-    wrapV: 2
-    wrapW: 2
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -110,169 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_0
+      name: Sheet_Caminata_Fase_2 (1)_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 32
-        width: 257
+        x: 972
+        y: 775
+        width: 242
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e23d01664d07146a8147eb728cc265
+      internalID: 701654552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet_Caminata_Fase_2 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 777
+        width: 167
         height: 606
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78945279517b15843b18e7e3bf6a862e
-      internalID: -63510022
+      spriteID: 613a596dd1df0de40ae3999e52b38503
+      internalID: -528944130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_1
+      name: Sheet_Caminata_Fase_2 (1)_2
       rect:
         serializedVersion: 2
-        x: 292
-        y: 35
-        width: 175
-        height: 606
+        x: 1465
+        y: 777
+        width: 214
+        height: 626
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd5192a276bb40041be2aeab9895098c
-      internalID: 1023197468
+      spriteID: 64b2bdce56722eb41b0a24094ed590b5
+      internalID: -608891486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_2
+      name: Sheet_Caminata_Fase_2 (1)_3
       rect:
         serializedVersion: 2
-        x: 487
-        y: 35
-        width: 212
-        height: 616
+        x: 1709
+        y: 758
+        width: 208
+        height: 623
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d87139e487e0ae34faf2684fc605a190
-      internalID: -1461407642
+      spriteID: dfdd08b1fbef54347aeae2c2a8b6c651
+      internalID: 722999679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_3
+      name: Sheet_Caminata_Fase_2 (1)_4
       rect:
         serializedVersion: 2
-        x: 723
-        y: 22
-        width: 223
-        height: 619
+        x: 1953
+        y: 760
+        width: 242
+        height: 613
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4b2bdf4ae5db63489120703f0eddd22
-      internalID: -1955874390
+      spriteID: 1b5a982e91439e74e8d0f60c36157d2e
+      internalID: 981810353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_4
+      name: Sheet_Caminata_Fase_2 (1)_5
       rect:
         serializedVersion: 2
-        x: 943
-        y: 23
-        width: 257
-        height: 606
+        x: 2228
+        y: 760
+        width: 164
+        height: 604
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf00ff3b6e92e445aea9a47f6ce2879
-      internalID: 784456458
+      spriteID: 23b8fe3934f5b6049a0f51ccde37e418
+      internalID: -1705741695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_5
+      name: Sheet_Caminata_Fase_2 (1)_6
       rect:
         serializedVersion: 2
-        x: 1227
-        y: 25
-        width: 175
-        height: 606
+        x: 2428
+        y: 760
+        width: 215
+        height: 623
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fe10e686d1c294c889756416977845
-      internalID: 757887606
+      spriteID: d95a12c5121cc6c498aa11997dffd48e
+      internalID: -1714949270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheet Caminata Fase 1_6
+      name: Sheet_Caminata_Fase_2 (1)_7
       rect:
         serializedVersion: 2
-        x: 1442
-        y: 26
+        x: 2658
+        y: 764
         width: 212
         height: 615
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a22a178c9b1266647bbf3b7eafa2261d
-      internalID: -2117589454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sheet Caminata Fase 1_7
-      rect:
-        serializedVersion: 2
-        x: 1679
-        y: 29
-        width: 223
-        height: 612
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e602c730f366094418cce6361e2c9162
-      internalID: -736634523
+      spriteID: 1493b52c2242fc74bb2ed5faf5367373
+      internalID: 1929415015
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sheet Caminata Fase 1_0: -63510022
-      Sheet Caminata Fase 1_1: 1023197468
-      Sheet Caminata Fase 1_2: -1461407642
-      Sheet Caminata Fase 1_3: -1955874390
-      Sheet Caminata Fase 1_4: 784456458
-      Sheet Caminata Fase 1_5: 757887606
-      Sheet Caminata Fase 1_6: -2117589454
-      Sheet Caminata Fase 1_7: -736634523
+      Sheet_Caminata_Fase_2 (1)_0: 701654552
+      Sheet_Caminata_Fase_2 (1)_1: -528944130
+      Sheet_Caminata_Fase_2 (1)_2: -608891486
+      Sheet_Caminata_Fase_2 (1)_3: 722999679
+      Sheet_Caminata_Fase_2 (1)_4: 981810353
+      Sheet_Caminata_Fase_2 (1)_5: -1705741695
+      Sheet_Caminata_Fase_2 (1)_6: -1714949270
+      Sheet_Caminata_Fase_2 (1)_7: 1929415015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
