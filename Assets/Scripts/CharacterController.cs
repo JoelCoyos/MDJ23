@@ -10,7 +10,6 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        _speed = 5.0f;
         currentSpeed = _speed;
     }
 

@@ -10,4 +10,9 @@ public class GameManager : MonoBehaviour
 
     public static UnityEvent<DreamManager.DreamType> StartDreamEvent;
 
+    private void Awake()
+    {
+        StartDreamEvent = new UnityEvent<DreamManager.DreamType>();
+    }
+
 }

@@ -9,6 +9,7 @@ public class DreamManager : MonoBehaviour
     private bool _isDreaming;
 
     [SerializeField] GameObject[] dreamEvents;
+    private GameObject currentDream;
 
     public static UnityEvent<int> DamageDreamHealthEvent;
 
@@ -16,29 +17,36 @@ public class DreamManager : MonoBehaviour
 
     public enum DreamType
     {
-        enemies,
-        cars,
-        type3
+        eye,
+        book
     }
 
     private DreamType _currentDream;
     public static UnityEvent<bool> DreamResultEvent;
+
+    private void Awake()
+    {
+        DamageDreamHealthEvent = new UnityEvent<int>();
+    }
 
     private void Start()
     {
         GameManager.StartDreamEvent.AddListener(StartDream);
         DamageDreamHealthEvent.AddListener(damageDreamHealth);
         dreamHealth = 3;
+        StartDream(DreamType.eye);
     }
 
     public void StartDream(DreamType type)
     {
-        Instantiate(dreamEvents[(int)type]);
+        currentDream =  Instantiate(dreamEvents[(int)type]);
     }
 
     public void damageDreamHealth(int points)
     {
         dreamHealth = dreamHealth - points > 0 ? dreamHealth - points : 0;
+        if(dreamHealth == 0)
+            Destroy(currentDream);
     }
 
 
