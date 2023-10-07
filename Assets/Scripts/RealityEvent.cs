@@ -14,6 +14,7 @@ public  abstract class RealityEvent : MonoBehaviour
 
     private void Start()
     {
-        backgroundSprite.size = new Vector2(Camera.current.pixelHeight,Camera.current.pixelWidth);
+        dreamCamera = Camera.current;
+       // backgroundSprite.size = new Vector2(Camera.current.pixelHeight,Camera.current.pixelWidth);
     }
 }

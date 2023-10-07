@@ -6,19 +6,25 @@ public class CharacterController : MonoBehaviour
 {
 
     [SerializeField] private float _speed;
+    private float currentSpeed;
 
     void Start()
     {
-        _speed = 10.0f;
+        _speed = 5.0f;
+        currentSpeed = _speed;
     }
 
     void Update()
     {
-        transform.position += _speed * Time.deltaTime * new Vector3(-1, 0,0);
 
-        if (Input.GetKeyDown(KeyCode.Backspace))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Action
+            currentSpeed = 0.0f;
         }
+        else if(Input.GetKeyUp(KeyCode.Space))
+        {
+            currentSpeed = _speed;
+        }
+        transform.position += currentSpeed * Time.deltaTime * new Vector3(1, 0,0);
     }
 }

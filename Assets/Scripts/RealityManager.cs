@@ -11,13 +11,13 @@ public class RealityManager : MonoBehaviour
 
     private void Start()
     {
-        _farPoint = 0;
+        _farPoint = 30;
         SpawnNewEvent();
     }
 
     private void Update()
     {
-        if(_playerTranform.position.x < _farPoint + spriteLenght)
+        if(_playerTranform.position.x > _farPoint - spriteLenght*2)
         {
             SpawnNewEvent();
         }
@@ -31,7 +31,7 @@ public class RealityManager : MonoBehaviour
         realityEvent.transform.position = new Vector3(_farPoint,0,0);
         realityEvent.Spawn();
         spriteLenght = realityEvent.backgroundSprite.bounds.extents.x * 2;
-        _farPoint -= spriteLenght;
+        _farPoint += spriteLenght;
 
     }
 }
