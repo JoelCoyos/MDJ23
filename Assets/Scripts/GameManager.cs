@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         canStartDialogue = true;
         isDialogue = false;
         dialogueNumber = 0;
+        canAttack = false;
         StartCoroutine(DreamAndDialogueRoutine());
     }
 
@@ -55,7 +56,6 @@ public class GameManager : MonoBehaviour
                 dialogueNumber++;
                 yield return new WaitUntil(() => !isDialogue);
             }
-            print("New dream");
             yield return new WaitForSeconds(1.0f);
             StartDreamEvent.Invoke();
             yield return new WaitUntil(() => !isDream);

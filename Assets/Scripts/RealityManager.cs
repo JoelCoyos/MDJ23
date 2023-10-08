@@ -31,7 +31,6 @@ public class RealityManager : MonoBehaviour
         realityEvent.transform.position = new Vector3(_farPoint,0,0);
         realityEvent.Spawn();
         spriteLenght = realityEvent.backgroundSprite.bounds.extents.x * 2;
-        print(spriteLenght);
         _farPoint += spriteLenght;
 
     }

@@ -68,8 +68,9 @@ public class DreamManager : MonoBehaviour
         GameManager.Instance.isDream = true;
         if(dreamNumber==5 && !secondPhase)
         {
-            GameManager.Instance.canAttack = true;
             dreamNumber = 0;
+            secondPhase=true;
+            GameManager.Instance.canAttack = true;
         }
         currentDream =  Instantiate(dreamEvents[(int)dreamNumber]);
         dreamNumber++;

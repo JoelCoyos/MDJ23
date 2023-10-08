@@ -8,6 +8,10 @@ public class Player : MonoBehaviour
     Animator playerAnimator;
     SpriteRenderer spriteRenderer;
 
+    [SerializeField] private GameObject weapon;
+    [SerializeField] private Animator weaponAnimator;
+    
+
     float horizontal;
     float vertical;
 
@@ -25,6 +29,12 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         movement = new Vector2(0, 0);
+        
+
+        if (GameManager.Instance.canAttack)
+            weapon.SetActive(true);
+        else
+            weapon.SetActive(false);
     }
 
     void Update()
@@ -34,9 +44,12 @@ public class Player : MonoBehaviour
         movement.x = horizontal;
         movement.y = vertical;
 
+        
+
         playerAnimator.SetFloat("Horizontal", horizontal);
         playerAnimator.SetFloat("Vertical", -vertical);
         playerAnimator.SetFloat("Speed",movement.sqrMagnitude);
+        
     }
 
     private void FixedUpdate()
@@ -49,7 +62,6 @@ public class Player : MonoBehaviour
         Rigidbody2D enemy = other.gameObject.GetComponent<Rigidbody2D>();
         if(enemy!=null && canTakeDamage)
         {
-            print("enemigo");
             Vector2 difference = transform.position - enemy.gameObject.transform.position;
             difference = difference.normalized * thrust;
             body.AddForce(difference, ForceMode2D.Impulse);

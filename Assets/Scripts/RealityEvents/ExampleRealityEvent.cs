@@ -6,7 +6,7 @@ public class ExampleRealityEvent : RealityEvent
 {
     public override void Spawn()
     {
-        print("Estoy haciendo algo");
+
     }
 }
 
