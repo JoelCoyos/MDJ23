@@ -16,7 +16,7 @@ public class DreamManager : MonoBehaviour
     private int dreamHealth;
     private bool secondPhase;
 
-    private int dreamNumber;
+    public static int dreamNumber;
 
     [SerializeField] private Material dreamMaterial;
 
@@ -106,7 +106,7 @@ public class DreamManager : MonoBehaviour
         if (dreamHealth == 0)
         {
             dreamAnimator.SetTrigger("EndDream");
-            DreamResult(false);
+            DreamResultEvent.Invoke(false);
         }
         else if(dreamHealth == 2)
         {

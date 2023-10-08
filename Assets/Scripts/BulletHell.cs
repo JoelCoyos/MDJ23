@@ -5,11 +5,17 @@ using UnityEngine;
 public class BulletHell : MonoBehaviour
 {
     private float angle = 0f;
+
+    AudioSource source;
+
+    [SerializeField] AudioClip[] attacksAudio;
     
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Fire", 0f, 0.1f);
+        source = GetComponent<AudioSource>();
+        StartCoroutine(PlayAttackSound());
     }
 
    
@@ -35,6 +41,17 @@ public class BulletHell : MonoBehaviour
         if (angle >= 360f)
         {
             angle = 0f;
+        }
+    }
+
+    private IEnumerator PlayAttackSound()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(Random.Range(1, 3));
+            source.clip = attacksAudio[Random.Range(0,attacksAudio.Length-1)];
+            source.loop = false;
+            source.Play();
         }
     }
 

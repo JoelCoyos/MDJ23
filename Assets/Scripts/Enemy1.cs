@@ -10,12 +10,15 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] float projectileSpeed;
     Animator eyeAnimator;
 
+    AudioSource source;
+
     List<GameObject> eyes;
     void Start()
     {
         StartCoroutine(ShootPlayerRoutine());
         eyeAnimator = GetComponent<Animator>();
         eyes = new List<GameObject>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class Enemy1 : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(3, 5));
+            source.Play();
             ShootProjectile();
             eyeAnimator.SetTrigger("AtaqueTrigger");
         }

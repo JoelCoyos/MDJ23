@@ -1,5 +1,5 @@
-CA ¡Oh Dani! ¡Sos vos otra vez, que gusto verte! 
-DL . . . 
-CS Ay vos siempre tan hablador.. 
-CN Hoy te tengo algo muy especial 
-CS Te preparé unos escenarios entretenidos para tu camino a la facultad! ¡disfrutalos!
+CN ¡Oh Dani! ¡Sos vos otra vez, que gusto verte!
+DN . . .
+CN Ay vos siempre tan hablador.. 
+CN Hoy te tengo algo muy especial
+CH Te preparé unos escenarios entretenidos para tu camino a la facultad! ¡disfrutalos!

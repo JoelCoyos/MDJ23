@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
     public static UnityEvent<string> StartDialogueEvent;
 
 
-    float charactersPerSecond = 100;
+    float charactersPerSecond = 500;
     bool finishWriting;
 
 
@@ -76,13 +76,26 @@ public class DialogueManager : MonoBehaviour
         if (line[0]=='C')
         {
             if (line[1]=='H')
-            {
                 portraitImage.sprite = clemHappy;
-            }
+            else if (line[1] == 'N')
+                portraitImage.sprite = clemNormal;
+            else if (line[1] == 'S')
+                portraitImage.sprite = clemSad;
+            else if (line[1] == 'A')
+                portraitImage.sprite = clemSorpresa;
         }
         else if (line[0]=='D')
         {
-
+            if (line[1] == 'E')
+                portraitImage.sprite = daniEstresado;
+            else if (line[1] == 'L')
+                portraitImage.sprite = daniLlorando;
+            else if (line[1] == 'N')
+                portraitImage.sprite = daniNormal;
+            else if (line[1] == 'S')
+                portraitImage.sprite = daniSad;
+            else if (line[1] == 'H')
+                portraitImage.sprite = daniHappy;
         }
         line = line.Substring(3);
         string textBuffer = null;

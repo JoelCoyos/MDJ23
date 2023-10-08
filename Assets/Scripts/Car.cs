@@ -10,8 +10,13 @@ public class Car : MonoBehaviour
     [SerializeField] Animator carAnimator;
     [SerializeField] SpriteRenderer _spriteRenderer;
 
+    AudioSource source;
+
+    [SerializeField] AudioClip[] attacksAudio;
+
     private void Start()
     {
+        source = GetComponent<AudioSource>();
         Vector2 carPosition = transform.position;
         if(carPosition.x < 0 && carPosition.y>0) //Cuadrante 1
         {
@@ -34,6 +39,10 @@ public class Car : MonoBehaviour
             _spriteRenderer.flipX = true;
 
         StartCoroutine(Despawn());
+
+        source.clip = attacksAudio[Random.Range(0, attacksAudio.Length - 1)];
+        source.loop = false;
+        source.Play();
     }
 
     private void Update()
@@ -46,6 +55,7 @@ public class Car : MonoBehaviour
         yield return new WaitForSeconds(5.0f);
         Destroy(this);
     }
+
 
 
 }

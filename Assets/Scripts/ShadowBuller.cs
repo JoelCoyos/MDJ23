@@ -14,6 +14,15 @@ public class ShadowBuller : MonoBehaviour
 
     [SerializeField] Animator shadowAnimator;
 
+    AudioSource source;
+
+    [SerializeField] AudioClip[] attacksAudio;
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -42,5 +51,14 @@ public class ShadowBuller : MonoBehaviour
 
         Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
         rb.velocity = moveDirection * moveSpeed;
+
+        PlayAttackSound();
+    }
+
+    private void PlayAttackSound()
+    {
+        source.clip = attacksAudio[Random.Range(0, attacksAudio.Length - 1)];
+        source.loop = false;
+        source.Play();
     }
 }

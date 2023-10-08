@@ -83,7 +83,7 @@ public class RealityManager : MonoBehaviour
 
     private IEnumerator FadeOutMusic()
     {
-        float timeElapsed = 0;
+        float timeElapsed = 0.0f;
         float lerpDuration = 1.0f;
         float startValue, endValue;
         startValue = 1.0f;

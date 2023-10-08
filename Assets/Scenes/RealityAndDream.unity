@@ -1278,16 +1278,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1989089911}
   dialogueBox: {fileID: 2019808504}
-  clemHappy: {fileID: 0}
-  clemNormal: {fileID: 0}
-  clemSad: {fileID: 0}
-  clemSorpresa: {fileID: 0}
-  daniEstresado: {fileID: 0}
-  daniLlorando: {fileID: 0}
-  daniNormal: {fileID: 0}
-  daniSad: {fileID: 0}
-  daniHappy: {fileID: 0}
-  portraitImage: {fileID: 0}
+  clemHappy: {fileID: 21300000, guid: 6d5064b41228fa34697b3f93a9b2ccdb, type: 3}
+  clemNormal: {fileID: 21300000, guid: 7dc6f3955ae9a494aa7268d5287afda7, type: 3}
+  clemSad: {fileID: 21300000, guid: 6cb118e659f148c47bef5c5e30b59da8, type: 3}
+  clemSorpresa: {fileID: 21300000, guid: e80cfcd6d11f05b4e99a94412bb85f39, type: 3}
+  daniEstresado: {fileID: 21300000, guid: 2668e22dc8660ac42a46aec428e83a92, type: 3}
+  daniLlorando: {fileID: 21300000, guid: c214fc165bf4f8249b7e751a8feeae30, type: 3}
+  daniNormal: {fileID: 21300000, guid: ba1d86d5a9376214b99eff3f929e43e3, type: 3}
+  daniSad: {fileID: 21300000, guid: 16d3f866ebc17ef40827fb80007dc20b, type: 3}
+  daniHappy: {fileID: 21300000, guid: 0b871a0572a69634facf56cd28d2fc80, type: 3}
+  portraitImage: {fileID: 1163039677}
 --- !u!1 &1665474237
 GameObject:
   m_ObjectHideFlags: 0
