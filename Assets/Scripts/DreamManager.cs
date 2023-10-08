@@ -82,11 +82,18 @@ public class DreamManager : MonoBehaviour
             dreamHealth++;
         }
         dreamAnimator.SetTrigger("EndDream");
-        Destroy(currentDream);
+        StartCoroutine(DestroyDreamRoutine());
         //ResetAllTriggers();
         dreamAnimator.ResetTrigger("TakeDamage"); //horrible
         dreamAnimator.ResetTrigger("EnterDream");
         GameManager.Instance.isDream = false;
+    }
+
+    private IEnumerator DestroyDreamRoutine()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(currentDream);
+
     }
 
     public void damageDreamHealth(int points)
