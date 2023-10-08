@@ -5,35 +5,30 @@ using UnityEngine;
 public class BulletHell : MonoBehaviour
 {
     private float angle = 0f;
-    private Vector2 bulletMoveDirection;
-
+    
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Fire", 0f, 0.1f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   
     private void Fire()
     {
         for (int i = 0; i <= 10; i++)
         {
-            float bulDirX = transform.position.x + Mathf.Sin(((angle + 180f * i) * Mathf.PI) / 180f);
-            float bulDirY = transform.position.y + Mathf.Cos(((angle + 180f * i) * Mathf.PI) / 180f);
-        
-            Vector3 bulMoveVector = new Vector3(bulDirX, bulDirY, 0f);
-            Vector2 bulDir = (bulMoveVector - transform.position).normalized;
+            Vector2 bulDir = new Vector2(Mathf.Sin(((angle + 180f * i) * Mathf.PI) / 180f), Mathf.Cos(((angle + 180f * i) * Mathf.PI) / 180f));
 
             GameObject bul = BulletPool.instance.GetBullet();
-            bul.transform.position = transform.position;
-            bul.transform.rotation = transform.rotation;
-            bul.SetActive(true);
-            bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
+
+            if(bul != null)
+            {
+                bul.transform.position = transform.position;
+                bul.transform.rotation = transform.rotation;
+                bul.SetActive(true);
+                bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
+            }
+            
         }
         angle += 10f;
 
