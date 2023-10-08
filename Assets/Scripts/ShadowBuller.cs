@@ -12,7 +12,7 @@ public class ShadowBuller : MonoBehaviour
     public float timeBetweenShots = 2.0f;
     private float lastShotTime;
 
-
+    [SerializeField] Animator shadowAnimator;
 
     // Update is called once per frame
     void Update()
@@ -33,6 +33,7 @@ public class ShadowBuller : MonoBehaviour
     }
     void Shoot()
     {
+        shadowAnimator.SetTrigger("ShadowAttack");
         lastShotTime = Time.time;
 
         GameObject newProjectile = Instantiate(bullyingPrefab, transform.position, Quaternion.identity);
