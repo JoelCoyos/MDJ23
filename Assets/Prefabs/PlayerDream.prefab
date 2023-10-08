@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 62493676749282560}
-  runSpeed: 5
+  runSpeed: 7
   thrust: 100
 --- !u!95 &1670799349297592596
 Animator:

@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dreamEvents:
-  - {fileID: 7389332905846843580, guid: fe20948a28321e641b10430024a9ecc8, type: 3}
+  - {fileID: 6181261572612505602, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
   dreamMaterial: {fileID: 2100000, guid: 19b201881985e8c4f90c211f99da3338, type: 2}
   VisionRadius: 0
 --- !u!95 &562451602
@@ -1142,6 +1142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c260aeeb0ac1b29488740f395b46205e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
 --- !u!1 &1724929264
 GameObject:
   m_ObjectHideFlags: 0
