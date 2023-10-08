@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
-{
+{ 
+
+    [SerializeField] GameObject creditos;
+    [SerializeField] GameObject principal;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +23,22 @@ public class MenuManager : MonoBehaviour
     public void PlayButton()
     {
         SceneManager.LoadScene("CutsceneStart");
+    }
+
+    public void EnterCreditos()
+    {
+        creditos.SetActive(true);
+        principal.SetActive(false);
+    }
+
+    public void ExitCreditos()
+    {
+        creditos.SetActive(false);
+        principal.SetActive(true);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

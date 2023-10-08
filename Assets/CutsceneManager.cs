@@ -19,6 +19,7 @@ public class CutsceneManager : MonoBehaviour
     {
         currentImage.sprite = textures[0];
         textureNumber = 1;
+        source  = GetComponent<AudioSource>();
         source.Play();
     }
 

@@ -425,9 +425,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dreamEvents:
   - {fileID: 6181261572612505602, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
-  - {fileID: 7389332905846843580, guid: fe20948a28321e641b10430024a9ecc8, type: 3}
   - {fileID: 4812056345409874330, guid: efd33fbadd42cea4ebfe8b57bef1ae05, type: 3}
+  - {fileID: 7389332905846843580, guid: fe20948a28321e641b10430024a9ecc8, type: 3}
   - {fileID: 963226997627738575, guid: 70a1dfc164a9f84449d166c66996304f, type: 3}
+  dreamBackground: {fileID: 0}
   dreamMaterial: {fileID: 2100000, guid: 19b201881985e8c4f90c211f99da3338, type: 2}
   VisionRadius: -1
 --- !u!95 &562451602
@@ -942,6 +943,7 @@ MonoBehaviour:
   - {fileID: 5264625294940437383, guid: 6e967b0f77c3b7442a797a95348d25cc, type: 3}
   - {fileID: 5264625294940437383, guid: e55da0752c465a045a6dc6a9e6c8fe76, type: 3}
   - {fileID: 5264625294940437383, guid: df15220add6cd364ca44be3059ee3baa, type: 3}
+  - {fileID: 5264625294940437383, guid: 2516d568e5871554c9c671bce9806c93, type: 3}
 --- !u!82 &1480521307
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1637,10 +1639,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text
+  m_text: Holaaaaaaaaaaaaa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05e5a23272e87247a09789126aa8789, type: 2}
+  m_sharedMaterial: {fileID: 7574248339320607579, guid: e05e5a23272e87247a09789126aa8789, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1664,8 +1666,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.22
-  m_fontSizeBase: 37.22
+  m_fontSize: 53.71
+  m_fontSizeBase: 53.71
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1730,8 +1732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.5, y: 7.85}
-  m_SizeDelta: {x: 1061.05, y: 228.27}
+  m_AnchoredPosition: {x: 130, y: -0.000011444}
+  m_SizeDelta: {x: 998.01, y: 179.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2019808504
 GameObject:

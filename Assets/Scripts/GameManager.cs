@@ -45,6 +45,14 @@ public class GameManager : MonoBehaviour
         StartCoroutine(DreamAndDialogueRoutine());
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
+        }
+    }
+
     public IEnumerator DreamAndDialogueRoutine()
     {
         while(true)

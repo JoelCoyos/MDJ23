@@ -158,6 +158,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 087c8d6d4b75c75488965a75c5f4c04b, type: 3}
   - {fileID: 21300000, guid: 917b76e69a0b3664f85ca118c07b18cd, type: 3}
   - {fileID: 21300000, guid: d3cc1002e8ca55d4cb32f5fdbc91d496, type: 3}
+  - {fileID: 21300000, guid: 073514b4e2e1b454f9cc1e71ecef6486, type: 3}
+  - {fileID: 21300000, guid: 46bb453f406ae524382b88d222b70704, type: 3}
   currentImage: {fileID: 2064258120}
   NextScene: Menu
 --- !u!4 &413692834
