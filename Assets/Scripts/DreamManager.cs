@@ -65,6 +65,7 @@ public class DreamManager : MonoBehaviour
         
         dreamHealth = 3;
         dreamAnimator.SetTrigger("EnterDream");
+        dreamAnimator.ResetTrigger("EndDream");
         GameManager.Instance.isDream = true;
         if(dreamNumber==4 && !secondPhase)
         {
@@ -88,6 +89,7 @@ public class DreamManager : MonoBehaviour
         dreamAnimator.ResetTrigger("TakeDamage"); //horrible
         dreamAnimator.ResetTrigger("EnterDream");
         GameManager.Instance.isDream = false;
+        dreamHealth = 3;
     }
 
     private IEnumerator DestroyDreamRoutine()
@@ -106,7 +108,7 @@ public class DreamManager : MonoBehaviour
             dreamAnimator.SetTrigger("EndDream");
             DreamResult(false);
         }
-        else
+        else if(dreamHealth == 2)
         {
             dreamAnimator.SetTrigger("TakeDamage");
         }

@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         movement = new Vector2(0, 0);
-        
+        StartCoroutine(IFramesTime());
 
         if (GameManager.Instance.canAttack)
             weapon.SetActive(true);
@@ -73,8 +73,19 @@ public class Player : MonoBehaviour
     IEnumerator IFramesTime()
     {
         canTakeDamage = false;
+        StartCoroutine(HitAnimation());
         yield return new WaitForSeconds(1);
         canTakeDamage = true;
+    }
+
+    IEnumerator HitAnimation()
+    {
+        while(!canTakeDamage)
+        {
+            spriteRenderer.enabled = !spriteRenderer.enabled;
+            yield return new WaitForSeconds(0.2f);
+        }
+        spriteRenderer.enabled = true;
     }
 
 
