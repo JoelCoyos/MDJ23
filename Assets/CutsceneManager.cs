@@ -10,11 +10,14 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] private Image currentImage;
     private int textureNumber;
 
+    private AudioSource source;
+
 
     private void Start()
     {
         currentImage.sprite = textures[0];
         textureNumber = 1;
+        source.Play();
     }
 
     private void Update()
