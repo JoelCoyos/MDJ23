@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         while(true)
         {
             //yield return new WaitUntil(() => canStartDialogue);
-            if(dialogueNumber<2)
+            if(dialogueNumber<4)
             {
                 isDialogue = true;
                 DialogueManager.StartDialogueEvent.Invoke(dialoguesFiles[dialogueNumber]);

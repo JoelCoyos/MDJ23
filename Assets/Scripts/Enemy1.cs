@@ -16,8 +16,6 @@ public class Enemy1 : MonoBehaviour
         StartCoroutine(ShootPlayerRoutine());
         eyeAnimator = GetComponent<Animator>();
         eyes = new List<GameObject>();
-
-        DreamManager.DreamResultEvent.AddListener(DestroyAllEyes);
     }
 
     // Update is called once per frame
@@ -55,13 +53,5 @@ public class Enemy1 : MonoBehaviour
             yield return null;
         }
         projectileTransform.position = target;
-    }
-
-    private void DestroyAllEyes(bool result)
-    {
-        foreach(GameObject gameObject in eyes)
-        {
-            Destroy(gameObject);
-        }
     }
 }

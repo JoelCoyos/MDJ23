@@ -24,6 +24,7 @@ public class CarDreamEvent : DreamEvent
     public override void Spawn()
     {
         StartCoroutine(CarSpawnRoutine());
+        StartCoroutine(TimerDream());
     }
 
     private IEnumerator CarSpawnRoutine()
@@ -45,5 +46,11 @@ public class CarDreamEvent : DreamEvent
             }
             car.transform.position = positionCar;
         }
+    }
+
+    private IEnumerator TimerDream()
+    {
+        yield return new WaitForSeconds(15.0f);
+        DreamManager.DreamResultEvent.Invoke(true);
     }
 }
