@@ -7,6 +7,8 @@ public class Car : MonoBehaviour
     private Vector3 _movementDirection;
 
     [SerializeField] private float _speed;
+    [SerializeField] Animator carAnimator;
+    [SerializeField] SpriteRenderer _spriteRenderer;
 
     private void Start()
     {
@@ -27,6 +29,10 @@ public class Car : MonoBehaviour
         {
             _movementDirection = new Vector3(-1, 1);
         }
+        carAnimator.SetFloat("yDic", _movementDirection.y);
+        if (_movementDirection.x > 0)
+            _spriteRenderer.flipX = true;
+
         StartCoroutine(Despawn());
     }
 
