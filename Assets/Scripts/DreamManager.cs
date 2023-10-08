@@ -14,6 +14,9 @@ public class DreamManager : MonoBehaviour
     public static UnityEvent<int> DamageDreamHealthEvent;
 
     private int dreamHealth;
+    private bool secondPhase;
+
+    private int dreamNumber;
 
     [SerializeField] private Material dreamMaterial;
 
@@ -22,8 +25,10 @@ public class DreamManager : MonoBehaviour
 
     public enum DreamType
     {
+        book,
+        shadows,
         eye,
-        book
+        car
     }
 
     private DreamType _currentDream;
@@ -32,6 +37,22 @@ public class DreamManager : MonoBehaviour
     private void Awake()
     {
         DamageDreamHealthEvent = new UnityEvent<int>();
+        DreamResultEvent = new UnityEvent<bool>();
+    }
+
+
+    private void Start()
+    {
+        GameManager.StartDreamEvent.AddListener(StartDream);
+        DamageDreamHealthEvent.AddListener(damageDreamHealth);
+        DreamResultEvent.AddListener(DreamResult);
+        dreamHealth = 3;
+        dreamNumber = 0;
+        secondPhase = false;
+        dreamAnimator = GetComponent<Animator>();
+        //StartDream();
+
+        
     }
 
     private void Update()
@@ -39,26 +60,61 @@ public class DreamManager : MonoBehaviour
         dreamMaterial.SetFloat("_DreamPlayerVisionRadius", VisionRadius);
     }
 
-    private void Start()
+    public void StartDream()
     {
-        GameManager.StartDreamEvent.AddListener(StartDream);
-        DamageDreamHealthEvent.AddListener(damageDreamHealth);
+        
         dreamHealth = 3;
-        dreamAnimator = GetComponent<Animator>();
-        StartDream(DreamType.eye);
+        dreamAnimator.SetTrigger("EnterDream");
+        GameManager.Instance.isDream = true;
+        if(dreamNumber==5 && !secondPhase)
+        {
+            GameManager.Instance.canAttack = true;
+            dreamNumber = 0;
+        }
+        currentDream =  Instantiate(dreamEvents[(int)dreamNumber]);
+        dreamNumber++;
     }
 
-    public void StartDream(DreamType type)
+    public void DreamResult(bool result)
     {
-        currentDream =  Instantiate(dreamEvents[(int)type]);
+        if (result)
+        {
+            dreamHealth++;
+        }
+        dreamAnimator.SetTrigger("EndDream");
+        Destroy(currentDream);
+        //ResetAllTriggers();
+        dreamAnimator.ResetTrigger("TakeDamage"); //horrible
+        dreamAnimator.ResetTrigger("EnterDream");
+        GameManager.Instance.isDream = false;
     }
 
     public void damageDreamHealth(int points)
     {
         dreamHealth = dreamHealth - points > 0 ? dreamHealth - points : 0;
-        dreamAnimator.SetTrigger("TakeDamage");
+        
         if (dreamHealth == 0)
-            Destroy(currentDream);
+        {
+            dreamAnimator.SetTrigger("EndDream");
+            DreamResult(false);
+        }
+        else
+        {
+            dreamAnimator.SetTrigger("TakeDamage");
+        }
+        
+
+    }
+
+    private void ResetAllTriggers()
+    {
+        foreach (var param in dreamAnimator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Trigger)
+            {
+                dreamAnimator.ResetTrigger(param.name);
+            }
+        }
     }
 
 

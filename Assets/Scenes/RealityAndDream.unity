@@ -425,8 +425,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dreamEvents:
   - {fileID: 6181261572612505602, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
+  - {fileID: 7389332905846843580, guid: fe20948a28321e641b10430024a9ecc8, type: 3}
+  - {fileID: 7389332905846843580, guid: fe20948a28321e641b10430024a9ecc8, type: 3}
+  - {fileID: 963226997627738575, guid: 70a1dfc164a9f84449d166c66996304f, type: 3}
   dreamMaterial: {fileID: 2100000, guid: 19b201881985e8c4f90c211f99da3338, type: 2}
-  VisionRadius: 0
+  VisionRadius: -1
 --- !u!95 &562451602
 Animator:
   serializedVersion: 5
@@ -857,7 +860,7 @@ MonoBehaviour:
   _playerTranform: {fileID: 1504893490}
   _farPoint: 0
   RealityEvents:
-  - {fileID: 5264625294940437383, guid: 6e967b0f77c3b7442a797a95348d25cc, type: 3}
+  - {fileID: 5264625294940437383, guid: 2516d568e5871554c9c671bce9806c93, type: 3}
 --- !u!1 &1504893488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1146,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
+  canAttack: 0
+  canStartDream: 0
+  canStartDialogue: 0
+  isDialogue: 0
+  isDream: 0
 --- !u!1 &1724929264
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EyeDream : DreamEvent
+public class BookEvents : DreamEvent
 {
-    [SerializeField] private GameObject _eye;
-    private int _timeLeft;
-
     public override void Spawn()
     {
         StartCoroutine(TimerDream());
@@ -17,5 +14,4 @@ public class EyeDream : DreamEvent
         yield return new WaitForSeconds(15.0f);
         DreamManager.DreamResultEvent.Invoke(true);
     }
-
 }

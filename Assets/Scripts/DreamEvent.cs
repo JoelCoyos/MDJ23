@@ -13,7 +13,7 @@ public abstract class DreamEvent : MonoBehaviour
 
     private void Start()
     {
-        backgroundSprite.size = new Vector2(Camera.current.pixelHeight, Camera.current.pixelWidth);
+        Spawn();
     }
 
 

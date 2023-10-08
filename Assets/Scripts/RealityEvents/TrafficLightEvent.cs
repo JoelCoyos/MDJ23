@@ -16,21 +16,27 @@ public class TrafficLightEvent : RealityEvent
         redLight.SetActive(true);
         greenLight.SetActive(false);
         isRedLight = true;
-        StartCoroutine(WaitForGreenLight());
+        
     }
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
         if(coll.gameObject.name == "playerReality")
         {
-            if(isRedLight)
-            {
-                print("daño");
-            }
-            else
-            {
-                GameManager.Instance.currentHealth++;
-            }
+            StartCoroutine(WaitForGreenLight());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D coll)
+    {
+        if(!isRedLight)
+        {
+            GameManager.Instance.currentHealth++;
+            print("cruzaste en verde :)");
+        }
+        else
+        {
+            print("noooo cruzaste en rojo");
         }
     }
 

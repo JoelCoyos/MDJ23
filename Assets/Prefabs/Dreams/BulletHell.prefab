@@ -793,6 +793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513124073880065048}
+  - component: {fileID: 448082722737439232}
   m_Layer: 0
   m_Name: BulletHell
   m_TagString: Untagged
@@ -820,6 +821,22 @@ Transform:
   - {fileID: 8352060812575058762}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &448082722737439232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181261572612505602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0240dcfcc60fa6a49b8deaff977dfd71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DreamEventResult:
+    m_PersistentCalls:
+      m_Calls: []
+  backgroundSprite: {fileID: 0}
 --- !u!1 &6275665630507570845
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,10 +9,15 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField] float projectileSpeed;
     Animator eyeAnimator;
+
+    List<GameObject> eyes;
     void Start()
     {
         StartCoroutine(ShootPlayerRoutine());
         eyeAnimator = GetComponent<Animator>();
+        eyes = new List<GameObject>();
+
+        DreamManager.DreamResultEvent.AddListener(DestroyAllEyes);
     }
 
     // Update is called once per frame
@@ -25,6 +30,7 @@ public class Enemy1 : MonoBehaviour
     {
         GameObject gameObject =  Instantiate(projectile);
         gameObject.transform.position = transform.position;
+        eyes.Add(gameObject);
         StartCoroutine(UpdateProjectile(gameObject.transform, playerTransform.position));
     }
 
@@ -49,5 +55,13 @@ public class Enemy1 : MonoBehaviour
             yield return null;
         }
         projectileTransform.position = target;
+    }
+
+    private void DestroyAllEyes(bool result)
+    {
+        foreach(GameObject gameObject in eyes)
+        {
+            Destroy(gameObject);
+        }
     }
 }
