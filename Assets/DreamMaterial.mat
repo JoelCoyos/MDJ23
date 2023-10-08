@@ -101,7 +101,7 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DreamPlayerVisionRadius: -1
+    - _DreamPlayerVisionRadius: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnableExternalAlpha: 0

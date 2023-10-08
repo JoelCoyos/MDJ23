@@ -49,14 +49,14 @@ public class GameManager : MonoBehaviour
         while(true)
         {
             //yield return new WaitUntil(() => canStartDialogue);
-            if(dialogueNumber<5)
+            if(dialogueNumber<2)
             {
                 isDialogue = true;
                 DialogueManager.StartDialogueEvent.Invoke(dialoguesFiles[dialogueNumber]);
                 dialogueNumber++;
                 yield return new WaitUntil(() => !isDialogue);
             }
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(2.0f);
             StartDreamEvent.Invoke();
             yield return new WaitUntil(() => !isDream);
             yield return new WaitForSeconds(1.0f);

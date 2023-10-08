@@ -66,13 +66,13 @@ public class DreamManager : MonoBehaviour
         dreamHealth = 3;
         dreamAnimator.SetTrigger("EnterDream");
         GameManager.Instance.isDream = true;
-        if(dreamNumber==5 && !secondPhase)
+        if(dreamNumber==4 && !secondPhase)
         {
             dreamNumber = 0;
             secondPhase=true;
             GameManager.Instance.canAttack = true;
         }
-        currentDream =  Instantiate(dreamEvents[(int)dreamNumber]);
+        currentDream =  Instantiate(dreamEvents[dreamNumber]);
         dreamNumber++;
     }
 
