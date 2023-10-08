@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: e50c95fb12788ea41a47aefba0925087
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn
+        Proyectil 2_0
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1441
+        width: 202
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c5e97162c2c304e8aa2bb44f12ac58
+      internalID: -536850369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn
+        Proyectil 2_1
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 1452
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1477eead13c9b947a22dd9895a561e7
+      internalID: -1292119923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn
+        Proyectil 2_2
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1520
+        width: 148
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d714bf5f608174a8a9035f887d52c8
+      internalID: -1785375201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn
+        Proyectil 2_3
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 1522
+        width: 158
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9617635192aab1141ba956ae7be1e9bf
+      internalID: -900148114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn
+        Proyectil 2_4
+      rect:
+        serializedVersion: 2
+        x: 2547
+        y: 1510
+        width: 145
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06916d9029a9ac841a3c274549d2793c
+      internalID: 673072251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a3
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 901
+        width: 383
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025d848a5668ac549a3272d6337d1fe5
+      internalID: -973792453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a1
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 903
+        width: 326
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fd1304b91ab9f45a6ce1409b2fb661
+      internalID: -618474557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a2
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 912
+        width: 353
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18f0cca096e3af45a63e0d13026db9d
+      internalID: -1941170535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a4
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 923
+        width: 386
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32ce279086c9c64885cf72fd6bf6512
+      internalID: 530397123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a5
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 916
+        width: 382
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b009f9dc609884c40b3c4d0cf9495c11
+      internalID: 1410211230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a6
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 908
+        width: 385
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8389e613870b64444bbc99c70ab7209c
+      internalID: -1373844188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a8
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 325
+        width: 356
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42b3c3103fda0b429670c5ad995b47f
+      internalID: 2039749233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a9
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 328
+        width: 327
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870259df58d649b4789e0d799c378fdf
+      internalID: 391350063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a10
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 312
+        width: 326
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec44e53f520342f489343e6b5a7be55f
+      internalID: -1312593082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 307
+        width: 345
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d84b5faf8783fe42bb4d8de01fe16ae
+      internalID: -1416759810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a12
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 312
+        width: 364
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32c52c0d64471045b0fc7c1100c76c2
+      internalID: 786073593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 331
+        width: 404
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51d7044a5e81b24f97d391be9dcf5f6
+      internalID: -1765904232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_0: -536850369
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_1: -1292119923
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_10: -1974558735
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_11: 1692401374
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_12: 1604661807
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_13: 1893025797
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_14: 717793800
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_15: 1364961099
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_16: 2048948469
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_17: -1109308946
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_19: 1014512049
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_2: -1785375201
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_21: 395116501
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_22: 525201673
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_23: 1342889372
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_25: 102929463
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_26: 1441362181
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_28: -1362625794
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_29: -1316284922
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_3: -900148114
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_31: -1448354502
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_32: -433805651
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_33: -1609468754
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_34: -1268263766
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_35: -1677168200
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_36: 496515142
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_37: -766664005
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_38: -741148462
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_39: -97578510
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_4: 673072251
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_40: 1981034140
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_41: -753898929
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_42: -850484223
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_43: 1607110172
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_44: 170284328
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_45: 2053794648
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_46: 1898408369
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_47: -1434418943
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_48: -304510634
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_5: -1790873950
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_50: -362313602
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_55: 185236199
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_57: 1295509642
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_58: 284322139
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_59: -1747175998
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_6: -2108966933
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_60: 1122651800
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_61: 538168803
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_62: -558503638
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_7: 1191553039
+      Sheet Enemigo 4 (Voces) _ Idle _ Proyectil _ Spawn Proyectil _ Spawn Proyectil 2_9: 1797858811
+      a1: -618474557
+      a10: -1312593082
+      a11: -1416759810
+      a12: 786073593
+      a2: -1941170535
+      a3: -973792453
+      a4: 530397123
+      a5: 1410211230
+      a6: -1373844188
+      a7: -1765904232
+      a8: 2039749233
+      a9: 391350063
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

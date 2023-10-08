@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledBullet: {fileID: 5975295068809847667, guid: cff4d66d3099233439609214a0cc88c9, type: 3}
+  initialPoolSize: 30
   notEnoughBulletsInPool: 1
 --- !u!1 &175759030988562111
 GameObject:
