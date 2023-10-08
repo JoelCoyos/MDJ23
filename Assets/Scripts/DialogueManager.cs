@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 
 public class DialogueManager : MonoBehaviour
@@ -10,10 +11,23 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private GameObject dialogueBox;
 
+    [SerializeField] private Sprite clemHappy;
+    [SerializeField] private Sprite clemNormal;
+    [SerializeField] private Sprite clemSad;
+    [SerializeField] private Sprite clemSorpresa;
+
+    [SerializeField] private Sprite daniEstresado;
+    [SerializeField] private Sprite daniLlorando;
+    [SerializeField] private Sprite daniNormal;
+    [SerializeField] private Sprite daniSad;
+    [SerializeField] private Sprite daniHappy;
+
+    [SerializeField] Image portraitImage;
+
     public static UnityEvent<string> StartDialogueEvent;
 
 
-    float charactersPerSecond = 10;
+    float charactersPerSecond = 100;
     bool finishWriting;
 
 
@@ -61,13 +75,16 @@ public class DialogueManager : MonoBehaviour
     {
         if (line[0]=='C')
         {
-
+            if (line[1]=='H')
+            {
+                portraitImage.sprite = clemHappy;
+            }
         }
         else if (line[0]=='D')
         {
 
         }
-        line = line.Substring(2);
+        line = line.Substring(3);
         string textBuffer = null;
         foreach (char c in line)
         {
