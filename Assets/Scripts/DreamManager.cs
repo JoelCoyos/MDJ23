@@ -13,6 +13,10 @@ public class DreamManager : MonoBehaviour
 
     public static UnityEvent<int> DamageDreamHealthEvent;
 
+    [SerializeField] SpriteRenderer dreamBackground;
+
+
+
     private int dreamHealth;
     private bool secondPhase;
 
@@ -50,6 +54,7 @@ public class DreamManager : MonoBehaviour
         dreamNumber = 0;
         secondPhase = false;
         dreamAnimator = GetComponent<Animator>();
+
         //StartDream();
 
         

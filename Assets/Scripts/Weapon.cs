@@ -14,9 +14,12 @@ public class Weapon : MonoBehaviour
     float angle;
     float distance = 1.5f;
 
+    AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         collider2d = GetComponent<Collider2D>();
         weaponAnimator = GetComponent<Animator>();
         collider2d.enabled = false;
@@ -44,6 +47,7 @@ public class Weapon : MonoBehaviour
 
     private void StartAttack()
     {
+        source.Play();
         collider2d.enabled = true;
     }
 

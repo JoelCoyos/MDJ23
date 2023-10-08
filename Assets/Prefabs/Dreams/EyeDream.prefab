@@ -1684,7 +1684,11 @@ MonoBehaviour:
   DreamEventResult:
     m_PersistentCalls:
       m_Calls: []
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 6393976891608750596}
+  fasesBackground:
+  - {fileID: 21300000, guid: c4e769d237dffcc4fa9e32245bc71b21, type: 3}
+  - {fileID: 21300000, guid: ee99c249ca38a1b4c9342123e2048346, type: 3}
+  - {fileID: 21300000, guid: 86c5511371a1fb9489e41dbf148639ee, type: 3}
   _eye: {fileID: 0}
 --- !u!82 &6557721884523139890
 AudioSource:

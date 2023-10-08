@@ -10,7 +10,11 @@ public class Player : MonoBehaviour
 
     [SerializeField] private GameObject weapon;
     [SerializeField] private Animator weaponAnimator;
-    
+
+    AudioSource source;
+
+    [SerializeField] AudioClip[] getHitAudio;
+
 
     float horizontal;
     float vertical;
@@ -24,6 +28,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        source = GetComponent<AudioSource>();
         body = GetComponent<Rigidbody2D>();
         canTakeDamage = true;
         playerAnimator = GetComponent<Animator>();
@@ -67,6 +72,8 @@ public class Player : MonoBehaviour
             body.AddForce(difference, ForceMode2D.Impulse);
             DreamManager.DamageDreamHealthEvent.Invoke(1);
             StartCoroutine(IFramesTime());
+            source.clip = getHitAudio[Random.Range(0, getHitAudio.Length - 1)];
+            source.Play();
         }
     }
 

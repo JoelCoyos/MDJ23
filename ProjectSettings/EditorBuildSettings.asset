@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RealityAndDream.unity
     guid: 25eee8c641f02764cb539ccd254b6d82
+  - enabled: 1
+    path: Assets/Scenes/GoodEnding.unity
+    guid: a5f85e08f6c6def4c81fb37d2dbf3821
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: d03c2310dfc8e6b49b1078bca1cfce32
   m_configObjects: {}

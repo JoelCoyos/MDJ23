@@ -546,7 +546,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 4f62d6e34ad9aa34594f5cf3c0645804, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c4e769d237dffcc4fa9e32245bc71b21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1101,7 +1101,11 @@ MonoBehaviour:
   DreamEventResult:
     m_PersistentCalls:
       m_Calls: []
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 934206098896697751}
+  fasesBackground:
+  - {fileID: 21300000, guid: c4e769d237dffcc4fa9e32245bc71b21, type: 3}
+  - {fileID: 21300000, guid: ee99c249ca38a1b4c9342123e2048346, type: 3}
+  - {fileID: 21300000, guid: 86c5511371a1fb9489e41dbf148639ee, type: 3}
 --- !u!82 &2974079778790448817
 AudioSource:
   m_ObjectHideFlags: 0

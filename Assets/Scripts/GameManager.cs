@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -63,13 +64,15 @@ public class GameManager : MonoBehaviour
                 DialogueManager.StartDialogueEvent.Invoke("7");
                 yield return new WaitUntil(() => !isDialogue);
                 //Trigerearcutscene
-                if(currentHealth>10)
+                if(currentHealth>=10)
                 {
                     print(" GOOD ENDING : DEJAS LA FACULTAD");
+                    SceneManager.LoadScene("GoodEnding");
                 }
                 else
                 {
                     print(" BAD ENDING: ESTUDIAS PSICOLOGIA");
+                    SceneManager.LoadScene("BadEnding");
                 }
             }
             yield return new WaitForSeconds(2.0f);

@@ -154,16 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textures:
-  - {fileID: 21300000, guid: efa4472c58eaae14fbfb0c87eba8e0ec, type: 3}
-  - {fileID: 21300000, guid: b9fbaf212483a4e4d948a12f4181c852, type: 3}
-  - {fileID: 21300000, guid: a04d0e26be9fdc24d82d64ed8178aa3b, type: 3}
-  - {fileID: 21300000, guid: f6c2fc2b1101c5d4eaef521912d4cfd1, type: 3}
-  - {fileID: 21300000, guid: af9282e56440a294e99f68cd5a2b9f15, type: 3}
-  - {fileID: 21300000, guid: 3f9d1046f444df74fadefdcfee0fa809, type: 3}
-  - {fileID: 21300000, guid: d1c0bca05737abe48940aae63afb23f0, type: 3}
-  - {fileID: 21300000, guid: a74828ee806829d4b8d0be25ca944db7, type: 3}
+  - {fileID: 21300000, guid: d32498685d1e08443806865628fbb501, type: 3}
+  - {fileID: 21300000, guid: 087c8d6d4b75c75488965a75c5f4c04b, type: 3}
   currentImage: {fileID: 2064258120}
-  NextScene: RealityAndDream
+  NextScene: Menu
 --- !u!4 &413692834
 Transform:
   m_ObjectHideFlags: 0
@@ -189,7 +183,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8fdef858f6cb3414ca40785a5e1a5d7c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bdde309b769d8c049b7c1adb6c65e3c9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -640,7 +634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: efa4472c58eaae14fbfb0c87eba8e0ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d32498685d1e08443806865628fbb501, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -12,6 +12,8 @@ public class CutsceneManager : MonoBehaviour
 
     private AudioSource source;
 
+    public string NextScene;
+
 
     private void Start()
     {
@@ -29,7 +31,7 @@ public class CutsceneManager : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Space) && textureNumber ==textures.Length)
         {
-            SceneManager.LoadScene("RealityAndDream");
+            SceneManager.LoadScene(NextScene);
         }
     }
 }

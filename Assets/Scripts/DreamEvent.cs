@@ -8,6 +8,7 @@ public abstract class DreamEvent : MonoBehaviour
 
     public UnityEvent<bool> DreamEventResult;
     public SpriteRenderer backgroundSprite;
+    [SerializeField] Sprite[] fasesBackground;
     private AudioSource source;
 
     public abstract void Spawn();
@@ -18,6 +19,14 @@ public abstract class DreamEvent : MonoBehaviour
         Spawn();
         source.loop = true;
         StartCoroutine(FadeInMusic());
+
+
+        if (GameManager.Instance.currentHealth < 6)
+            backgroundSprite.sprite = fasesBackground[0];
+        else if(GameManager.Instance.currentHealth >= 6 && GameManager.Instance.currentHealth < 15)
+            backgroundSprite.sprite = fasesBackground[1];
+        else if (GameManager.Instance.currentHealth >= 15)
+            backgroundSprite.sprite = fasesBackground[2];
     }
 
     private IEnumerator FadeInMusic()
