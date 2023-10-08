@@ -27,7 +27,7 @@ public class RealityManager : MonoBehaviour
 
     private void SpawnNewEvent()
     {
-        RealityEvent realityEvent =  Instantiate(RealityEvents[0]).GetComponent<RealityEvent>();
+        RealityEvent realityEvent =  Instantiate(RealityEvents[Random.Range(0,3)]).GetComponent<RealityEvent>();
         realityEvent.transform.position = new Vector3(_farPoint,0,0);
         realityEvent.Spawn();
         spriteLenght = realityEvent.backgroundSprite.bounds.extents.x * 2;

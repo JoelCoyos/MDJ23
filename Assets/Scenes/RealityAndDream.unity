@@ -860,6 +860,8 @@ MonoBehaviour:
   _playerTranform: {fileID: 1504893490}
   _farPoint: 0
   RealityEvents:
+  - {fileID: 5264625294940437383, guid: 6e967b0f77c3b7442a797a95348d25cc, type: 3}
+  - {fileID: 5264625294940437383, guid: e55da0752c465a045a6dc6a9e6c8fe76, type: 3}
   - {fileID: 5264625294940437383, guid: df15220add6cd364ca44be3059ee3baa, type: 3}
 --- !u!1 &1504893488
 GameObject:
