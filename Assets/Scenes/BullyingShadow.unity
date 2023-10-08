@@ -1054,6 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledBullet: {fileID: 5975295068809847667, guid: cff4d66d3099233439609214a0cc88c9, type: 3}
+  initialPoolSize: 10
   notEnoughBulletsInPool: 1
 --- !u!212 &3732507143554263468
 SpriteRenderer:
@@ -1434,7 +1435,7 @@ GameObject:
   - component: {fileID: 513124073864483919}
   - component: {fileID: 448082722757739095}
   m_Layer: 0
-  m_Name: BulletHell
+  m_Name: BullyingShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

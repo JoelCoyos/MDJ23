@@ -7,6 +7,7 @@ public class BulletPool : MonoBehaviour
     public static BulletPool instance;
 
     [SerializeField] private GameObject pooledBullet;
+    [SerializeField] private int initialPoolSize = 10;
     [SerializeField] private bool notEnoughBulletsInPool = true;
 
     private List<GameObject> bullets;
@@ -20,6 +21,13 @@ public class BulletPool : MonoBehaviour
     void Start()
     {
         bullets = new List<GameObject>();
+
+        for (int i = 0; i < initialPoolSize; i++) 
+        {
+            GameObject bul = Instantiate(pooledBullet);
+            bul.SetActive(false);
+            bullets.Add(bul);
+        }
     }
 
     public GameObject GetBullet()
