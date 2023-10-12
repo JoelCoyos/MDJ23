@@ -19,7 +19,7 @@ public class DespawnEye : MonoBehaviour
 
     IEnumerator SALIDEACA()
     {
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(2.0f);
         Destroy(this.gameObject);
     }
 

@@ -47,7 +47,7 @@ public class Weapon : MonoBehaviour
         weaponAnimator.SetFloat("Horizontal", movement.x);
         weaponAnimator.SetFloat("Vertical", movement.y);
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
             weaponAnimator.SetTrigger("isAttacking");
         }

@@ -9,7 +9,7 @@ public class CarDreamEvent : DreamEvent
     private Vector3[] screenDirections;
     private float distanceFromScreen;
 
-    private void Start()
+    public override void Spawn()
     {
         screenDirections = new Vector3[4];
         screenDirections[0] = new Vector2(0, 1);
@@ -17,12 +17,6 @@ public class CarDreamEvent : DreamEvent
         screenDirections[2] = new Vector2(0, -1);
         screenDirections[3] = new Vector2(-1, 0);
         distanceFromScreen = 5.0f;
-        Spawn();
-    }
-
-
-    public override void Spawn()
-    {
         StartCoroutine(CarSpawnRoutine());
         StartCoroutine(TimerDream());
     }

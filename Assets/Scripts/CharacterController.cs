@@ -18,12 +18,12 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
             currentSpeed = 0.0f;
             playerRealityAnimator.SetBool("isIdle", true);
         }
-        else if(Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
         {
             currentSpeed = _speed;
             playerRealityAnimator.SetBool("isIdle", false);
