@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
-        if(Input.GetKeyDown(KeyCode.Insert))
+        if(Input.GetKeyDown(KeyCode.Home))
         {
             SceneManager.LoadScene("BadEnding");
         }
