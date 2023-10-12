@@ -86,7 +86,7 @@ public class DreamManager : MonoBehaviour
     {
         if (result)
         {
-            dreamHealth++;
+            GameManager.Instance.currentHealth++;
         }
         dreamAnimator.SetTrigger("EndDream");
         StartCoroutine(DestroyDreamRoutine());

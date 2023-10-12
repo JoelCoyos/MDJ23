@@ -13,7 +13,7 @@ public class BulletHell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Fire", 0f, 0.1f);
+        InvokeRepeating("Fire", 1f, 0.1f);
         source = GetComponent<AudioSource>();
         StartCoroutine(PlayAttackSound());
     }

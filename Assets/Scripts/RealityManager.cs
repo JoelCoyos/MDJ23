@@ -12,8 +12,8 @@ public class RealityManager : MonoBehaviour
     AudioSource source;
 
     [SerializeField] AudioClip loopIntro;
-    [SerializeField] AudioClip loopA;
-    [SerializeField] AudioClip loopB;
+
+    [SerializeField] AudioClip[] loops;
 
     private void Start()
     {
@@ -39,7 +39,7 @@ public class RealityManager : MonoBehaviour
         }
         if(!source.isPlaying)
         {
-            source.clip = loopA;
+            source.clip = loops[Random.Range(0,loops.Length)];
             source.loop = true;
             source.Play();
         }
@@ -72,6 +72,9 @@ public class RealityManager : MonoBehaviour
         float startValue, endValue;
         startValue = 0.0f;
         endValue = 1.0f;
+        source.clip = loops[Random.Range(0, loops.Length)];
+        source.loop = true;
+        source.Play();
         while (timeElapsed < lerpDuration)
         {
             source.volume = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);

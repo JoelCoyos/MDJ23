@@ -33,7 +33,6 @@ public class AmigoEvent : RealityEvent
         if (isAmigoHappy)
         {
             GameManager.Instance.currentHealth++;
-            
             print("amigo feliz :)");
         }
         else

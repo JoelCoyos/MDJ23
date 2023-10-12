@@ -45,8 +45,8 @@ public class RandomMovement : MonoBehaviour
     Vector2 GenerateRandomPosition()
     {
         // Generate a random position within the movement boundaries
-        float x = Random.Range(-5.25f, 5f); // Adjust these values based on your movement boundaries
-        float y = Random.Range(-3.5f, 3f); // Adjust these values based on your movement boundaries
+        float x = Random.Range(-3.25f, 3f); // Adjust these values based on your movement boundaries
+        float y = Random.Range(-2.5f, 2f); // Adjust these values based on your movement boundaries
         return new Vector2(x, y);
     }
 }

@@ -937,8 +937,9 @@ MonoBehaviour:
   _playerTranform: {fileID: 1504893490}
   _farPoint: 0
   loopIntro: {fileID: 8300000, guid: 3b23e85063a0f4743ab9cbb59351df27, type: 3}
-  loopA: {fileID: 8300000, guid: 0e4949f792188c643925eb47b70affc1, type: 3}
-  loopB: {fileID: 8300000, guid: 318bf8092524fc141a126d9d22b74abe, type: 3}
+  loops:
+  - {fileID: 8300000, guid: 0e4949f792188c643925eb47b70affc1, type: 3}
+  - {fileID: 8300000, guid: 318bf8092524fc141a126d9d22b74abe, type: 3}
   RealityEvents:
   - {fileID: 5264625294940437383, guid: 6e967b0f77c3b7442a797a95348d25cc, type: 3}
   - {fileID: 5264625294940437383, guid: e55da0752c465a045a6dc6a9e6c8fe76, type: 3}
