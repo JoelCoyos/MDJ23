@@ -14,6 +14,8 @@ public class Weapon : MonoBehaviour
     float angle;
     float distance = 1.5f;
 
+    Vector2 movement;
+
     AudioSource source;
 
     // Start is called before the first frame update
@@ -24,25 +26,35 @@ public class Weapon : MonoBehaviour
         weaponAnimator = GetComponent<Animator>();
         collider2d.enabled = false;
         isAttacking = false;
+        movement = new Vector2(0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            isAttacking = true;
-        }
-        weaponAnimator.SetBool("isAttacking", isAttacking);
+        //weaponAnimator.SetBool("isAttacking", isAttacking);
 
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        direction.x = horizontal;
-        direction.y = vertical;
-        angle = Mathf.Rad2Deg*Mathf.Atan2(vertical, horizontal);
+        if (Mathf.Abs(horizontal) > 0 || Mathf.Abs(vertical) > 0)
+        {
+            movement.x = horizontal;
+            movement.y = vertical;
+        }
 
-        transform.localPosition = new Vector3(Mathf.Cos(angle) * distance, Mathf.Sin(angle) * distance, 0);
-        transform.localEulerAngles = new Vector3(0, 0, angle - 90);
+
+
+        weaponAnimator.SetFloat("Horizontal", movement.x);
+        weaponAnimator.SetFloat("Vertical", movement.y);
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            weaponAnimator.SetTrigger("isAttacking");
+        }
+        //angle = Mathf.Rad2Deg*Mathf.Atan2(vertical, horizontal);
+
+        //transform.localPosition = new Vector3(Mathf.Cos(angle) * distance, Mathf.Sin(angle) * distance, 0);
+        //transform.localEulerAngles = new Vector3(0, 0, angle - 90);
     }
 
     private void StartAttack()
@@ -58,7 +70,7 @@ public class Weapon : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         GameObject enemy = other.gameObject;
         print(enemy.name);

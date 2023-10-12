@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShadowBuller : MonoBehaviour
 {
     public Transform player;
-    public float moveSpeed = 3.0f;
+    public float moveSpeed = 0.1f;
     public GameObject bullyingPrefab;
     public float shootDistance = 5.0f;
     public float timeBetweenShots = 2.0f;
@@ -20,6 +20,7 @@ public class ShadowBuller : MonoBehaviour
     private void Start()
     {
         source = GetComponent<AudioSource>();
+        moveSpeed = 2.6f;
     }
 
     // Update is called once per frame

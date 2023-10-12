@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 3252376975978800081}
   m_Layer: 0
   m_Name: ShadowEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,10 +850,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17032933, y: -0.90331155}
+  m_Offset: {x: -0.12280244, y: -0.055152595}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -864,7 +864,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0934463, y: 1.3223859}
+  m_Size: {x: 1.4905773, y: 1.7332348}
   m_EdgeRadius: 0
 --- !u!114 &8797331756336900266
 MonoBehaviour:
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3726125238535251165}
-  moveSpeed: 3.68
+  moveSpeed: 3
   bullyingPrefab: {fileID: 5975295068809847667, guid: d9715617901bd97438d7c2eebcc75c0f, type: 3}
   shootDistance: 5
   timeBetweenShots: 0.6

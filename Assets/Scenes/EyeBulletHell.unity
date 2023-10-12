@@ -344,10 +344,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulletHell
       objectReference: {fileID: 0}
+    - target: {fileID: 6275267045684108273, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275267045684108273, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315139940915692423, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315139940915692423, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7130991101378467528, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
       propertyPath: bullet
       value: 
       objectReference: {fileID: 5975295068809847667, guid: d9715617901bd97438d7c2eebcc75c0f, type: 3}
+    - target: {fileID: 8352060812575058762, guid: 3e02d871d70fc8e469cddb4a4d8be1c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.54
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

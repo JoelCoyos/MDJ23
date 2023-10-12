@@ -268,6 +268,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 429544364363843440, guid: efd33fbadd42cea4ebfe8b57bef1ae05, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139692070489908935, guid: efd33fbadd42cea4ebfe8b57bef1ae05, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4812056345409874330, guid: efd33fbadd42cea4ebfe8b57bef1ae05, type: 3}
       propertyPath: m_Name
       value: BullyingShadow

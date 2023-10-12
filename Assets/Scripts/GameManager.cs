@@ -51,6 +51,14 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
+        if(Input.GetKeyDown(KeyCode.Insert))
+        {
+            SceneManager.LoadScene("BadEnding");
+        }
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            SceneManager.LoadScene("GoodEnding");
+        }
     }
 
     public IEnumerator DreamAndDialogueRoutine()
@@ -68,12 +76,13 @@ public class GameManager : MonoBehaviour
             print(DreamManager.dreamNumber);
             if(DreamManager.dreamNumber == 4 && canAttack)
             {
-                isDialogue = true;
-                DialogueManager.StartDialogueEvent.Invoke("7");
-                yield return new WaitUntil(() => !isDialogue);
+
                 //Trigerearcutscene
                 if(currentHealth>=10)
                 {
+                    isDialogue = true;
+                    DialogueManager.StartDialogueEvent.Invoke("7");
+                    yield return new WaitUntil(() => !isDialogue);
                     print(" GOOD ENDING : DEJAS LA FACULTAD");
                     SceneManager.LoadScene("GoodEnding");
                 }

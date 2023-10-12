@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         movement = new Vector2(0, 0);
         StartCoroutine(IFramesTime());
+        DreamManager.DreamResultEvent.AddListener(EndDream);
 
         if (GameManager.Instance.canAttack)
             weapon.SetActive(true);
@@ -62,19 +63,21 @@ public class Player : MonoBehaviour
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Rigidbody2D enemy = other.gameObject.GetComponent<Rigidbody2D>();
         if(enemy!=null && canTakeDamage)
         {
-            Vector2 difference = transform.position - enemy.gameObject.transform.position;
-            difference = difference.normalized * thrust;
-            body.AddForce(difference, ForceMode2D.Impulse);
             DreamManager.DamageDreamHealthEvent.Invoke(1);
             StartCoroutine(IFramesTime());
             source.clip = getHitAudio[Random.Range(0, getHitAudio.Length - 1)];
             source.Play();
         }
+    }
+
+    private void EndDream(bool result)
+    {
+        canTakeDamage = false;
     }
 
     IEnumerator IFramesTime()
