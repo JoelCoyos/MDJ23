@@ -21,11 +21,11 @@ public abstract class DreamEvent : MonoBehaviour
         StartCoroutine(FadeInMusic());
 
 
-        if (GameManager.Instance.currentHealth < 6)
+        if (GameManager.Instance.currentHealth < 4)
             backgroundSprite.sprite = fasesBackground[0];
-        else if(GameManager.Instance.currentHealth >= 6 && GameManager.Instance.currentHealth < 15)
+        else if(GameManager.Instance.currentHealth >= 6 && GameManager.Instance.currentHealth < 10)
             backgroundSprite.sprite = fasesBackground[1];
-        else if (GameManager.Instance.currentHealth >= 15)
+        else if (GameManager.Instance.currentHealth >= 10)
             backgroundSprite.sprite = fasesBackground[2];
     }
 
